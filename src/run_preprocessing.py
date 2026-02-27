@@ -4,12 +4,9 @@ Run preprocessing end-to-end:
 - preprocess
 - save processed output
 """
-
 from pathlib import Path
 import pandas as pd
-
 from src.preprocessing import preprocess_occ_enforcement
-
 
 def main():
     raw_path = Path("data/raw/occ_enforcement.csv")
@@ -20,12 +17,11 @@ def main():
 
     df_raw = pd.read_csv(raw_path)
 
-    # Adjust these if your CSV uses different column names
     df_clean = preprocess_occ_enforcement(
         df_raw,
-        institution_col="institution",
-        date_col="action_date",
-        action_type_col=None,
+        institution_col="BankName",
+        date_col="event_date",
+        action_type_col="EnforcementTypeDescription",
     )
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -37,4 +33,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
