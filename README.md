@@ -6,16 +6,16 @@ python -m src.preprocssing
 A cleaned dataset will be written to 'data/processed/'. 
 A 200-row sample is included in 'data/sample/ for demonstration. 
 
-###Regulatory Risk Intelligence###
+### Regulatory Risk Intelligence ###
 A forward-looking risk model that predicts whether a bank will receive a regulatory enforcement action within the next 6 months. 
 
-###Problem Statement###
+### Problem Statement ###
 Regulatory enforcement actions often occur in clusters. Once a bank receives an enforcement action, it is more likely to experience additional actions in subsequent months. 
 Risk teams need a structured way to prioritize monitroing resources. 
 This project answers: 
 Given historical enforcement activity, can we estimate the probability of a bank receiving another enforcement ation in the next 6 ths? 
 
-###Data Used###
+### Data Used ###
 * OCC enforcement action history data
 * Monthly bank0level panel dataset
 * Rolling 6-month event counts 
