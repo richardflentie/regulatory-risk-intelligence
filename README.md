@@ -28,19 +28,19 @@ Time-based split was used to revent lookahead bias.
 
 ### Modeling Approach ###
 events_last_6m -> bank-specific enforcement persistence 
-peer_events_last_6m -> systeic regulatory activity 
+peer_events_last_6m -> systemic regulatory activity 
 Forward 6-month label construction
 Time-based train/test vaildation 
 
 Baseline model: 
-Logisitc Regression 
+Logistic Regression
 No leakage
-Imblanced classification evaluation 
+Imbalanced classification evaluation 
 
 ### Results ###
 ROC-AUC:0.95
 Top Decile Caputa ~92% 
-Interpretation: If monitoring resources are focused on the top 10% highest-risk bank-months, approximately 92% of future events are captured. This indiciates a strong clustering of regulatory risks. 
+Interpretation: If monitoring resources are focused on the top 10% highest-risk bank-months, approximately 92% of future events are captured. This indicates a strong clustering of regulatory risks. 
 
 ## Limitations ##
 The model captures short-term enforcement momentum rather than structural bank risk.
@@ -55,4 +55,4 @@ Leakage Control
 Lift-based evaluation 
 Modular Python analytics pipeline 
 
-Application to operational risk, compliance analytics, and regulatory intelleigence functions. 
+Application to operational risk, compliance analytics, and regulatory intelligence functions. 
