@@ -1,0 +1,10 @@
+{
+  "roc_auc": 0.9546928116938047,
+  "features": [
+    "events_last_6m",
+    "peer_events_last_6m"
+  ],
+  "test_rows": 7134,
+  "positive_rate_test": 0.063919259882254,
+  "top_decile_capture": 0.918859649122807
+}
