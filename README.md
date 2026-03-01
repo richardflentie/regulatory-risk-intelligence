@@ -11,9 +11,9 @@ A forward-looking risk model that predicts whether a bank will receive a regulat
 
 ### Problem Statement ###
 Regulatory enforcement actions often occur in clusters. Once a bank receives an enforcement action, it is more likely to experience additional actions in subsequent months. 
-Risk teams need a structured way to prioritize monitroing resources. 
+Risk teams need a structured way to prioritize monitoring resources. 
 This project answers: 
-Given historical enforcement activity, can we estimate the probability of a bank receiving another enforcement ation in the next 6 ths? 
+Given historical enforcement activity, can we estimate the probability of a bank receiving another enforcement ation in the next 6 months? 
 
 ### Data Used ###
 * OCC enforcement action history data
@@ -39,7 +39,7 @@ Imbalanced classification evaluation
 
 ### Results ###
 ROC-AUC:0.95
-Top Decile Caputa ~92% 
+Top Decile Capture ~92% 
 Interpretation: If monitoring resources are focused on the top 10% highest-risk bank-months, approximately 92% of future events are captured. This indicates a strong clustering of regulatory risks. 
 
 ## Limitations ##
