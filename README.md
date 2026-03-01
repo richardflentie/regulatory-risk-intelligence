@@ -24,13 +24,13 @@ Each observation represents a: (bank,month)
 The target variable: 
 * y_next_6m = 1 
 if enforcement occurs in the rolling 6 months
-Time-based split was used to revent lookahead bias. 
+Time-based split was used to prevent lookahead bias. 
 
 ### Modeling Approach ###
 events_last_6m -> bank-specific enforcement persistence 
 peer_events_last_6m -> systemic regulatory activity 
 Forward 6-month label construction
-Time-based train/test vaildation 
+Time-based train/test validation 
 
 Baseline model: 
 Logistic Regression
@@ -55,4 +55,5 @@ Leakage Control
 Lift-based evaluation 
 Modular Python analytics pipeline 
 
-Application to operational risk, compliance analytics, and regulatory intelligence functions. 
+Application to operational risk, compliance analytics, and regulatory intelligence functions.
+
